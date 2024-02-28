@@ -5,14 +5,14 @@
       FONT SIZE SYSTEM (px)
       10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 /44 / 5 2 / 62 / 74 / 86 / 98
       
----- 01 TYPOGRAHY
+-- 01 TYPOGRAHY
 
 
  FONT-WEIGHTS:
 
  LINE HEIGHTS: 1
 
- PRIMARY COLOR:#e67e22
+ PRIMARY COLOR:#e67e22;
 TINTS:#fdf2e9
 GREYS: #555
  
@@ -30,7 +30,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -72,9 +72,10 @@ body {
   display: inline-block;
   text-decoration: none;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
   padding: 2rem 2rem;
   border-radius: 0.5rem;
+  transition: background-color 300ms;
 }
 .main-btn:link,
 .main-btn:visited {
@@ -89,10 +90,35 @@ body {
 .sec-btn:visited {
   background-color: #fff;
   color: #555;
-  border: #fff solid 4px;
+  box-shadow: inset 0 0 0 2px #fff;
+  /* border: 2px #fff solid; */
 }
 .sec-btn:hover,
 .sec-btn:active {
   background-color: #fdf2e9;
-  border: #fff solid 2px;
+}
+.margin-right {
+  margin-right: 2.5rem;
+}
+.delivered-meals {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+.delivered-imgs {
+  display: flex;
+}
+.delivered-imgs img {
+  border-radius: 50%;
+  opacity: 80%;
+  height: 6.4rem;
+  width: 6.4rem;
+}
+.delivered-imgs img:last-child {
+  margin-right: 2rem;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
 }
