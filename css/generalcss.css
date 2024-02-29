@@ -1,0 +1,98 @@
+/* 
+   SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 /44 / 5 2 / 62 / 74 / 86 / 98
+      
+-- 01 TYPOGRAHY
+   INTER , SANSERIF
+
+   --Line heights
+   default:1
+   1.05
+   1.5
+   Border-raius:9px;
+   
+   LETTER-SPACING: .075PX -0.5PX 1.2PX:
+   
+   PRIMARY COLOR:#e67e22;
+   TINTS:#fdf2e9 #fae5d3
+   GREYS: #555
+   SHADES: #cf711f;
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/******************************/
+/* GENERAL USABLE COMPONENTS */
+/******************************/
+.btn-box {
+  display: flex;
+  justify-content: space-between;
+}
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 2rem 2rem;
+  border-radius: 9px;
+  transition: background-color 300ms;
+}
+.main-btn:link,
+.main-btn:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+.main-btn:hover,
+.main-btn:active {
+  background-color: #cf711f;
+}
+.sec-btn:link,
+.sec-btn:visited {
+  background-color: #fff;
+  color: #555;
+  box-shadow: inset 0 0 0 2px #fff;
+  /* border: 2px #fff solid; */
+}
+.sec-btn:hover,
+.sec-btn:active {
+  background-color: #fdf2e9;
+}
+.margin-right {
+  margin-right: 2.5rem !important;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+.grid {
+  display: grid;
+  row-gap: 6.2rem;
+  column-gap: 9.6rem;
+}
+.grid--align-center {
+  align-items: center;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
