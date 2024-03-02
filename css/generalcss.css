@@ -74,9 +74,20 @@ body {
 .sec-btn:active {
   background-color: #fdf2e9;
 }
-.margin-right {
-  margin-right: 2.5rem !important;
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  transition: color 300ms;
+  border-bottom: 2px solid currentColor;
 }
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
 .container {
   max-width: 120rem;
   margin: 0 auto;
@@ -95,4 +106,19 @@ body {
 }
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+}
+/******************************/
+/* HELPER CLASSES */
+/******************************/
+strong {
+  font-weight: 500;
+}
+.margin-buttom {
+  margin-bottom: 4.8em !important;
+}
+.margin-right {
+  margin-right: 2.5rem !important;
+}
+.center-text {
+  text-align: center;
 }
