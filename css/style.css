@@ -367,8 +367,57 @@
 .section-pricing {
   padding: 9.6rem 0;
 }
-.price-lower {
+.pricing {
+  gap: 22rem;
+}
+.price {
+  font-size: 9rem;
+  font-weight: 500;
+  color: #333;
+}
+.price::before {
+  content: "$";
+  font-size: 3rem;
+  margin-left: 2rem;
+  font-weight: 500;
+}
+.price-tab {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  border: #f1d4bc solid 5px;
+  padding: 4rem 6.2rem;
+  border-radius: 10px;
+}
+.price-tab--2 {
+  background-color: #f1d4bc;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+.price-tab--2::after {
+  content: "BEST VALUE";
+  background-color: #fcc419;
+  position: absolute;
+  top: 2.7rem;
+  right: -3.6rem;
+  font-size: 1.4rem;
+  padding: 1rem 4rem;
+  transform: rotate(45deg);
+  font-weight: 700;
+  box-shadow: 0 2px 24px #d98d4c;
+}
+.period {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.pay-attribute {
+  gap: 1.2rem;
+}
+.price-package {
+  font-size: 2rem;
 }
