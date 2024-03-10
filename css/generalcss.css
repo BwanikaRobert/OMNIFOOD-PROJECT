@@ -97,7 +97,7 @@ body {
   color: #e67e22;
   text-decoration: none;
   transition: color 300ms;
-  border-bottom: 2px solid currentColor;
+  border-bottom: 1px solid currentColor;
 }
 .link:hover,
 .link:active {
