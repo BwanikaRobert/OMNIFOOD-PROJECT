@@ -85,7 +85,12 @@
   line-height: 1.2;
   margin-bottom: 9.6rem;
 }
-
+.heading-tertiary {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #333;
+}
 .subheading {
   display: block;
   font-size: 1.6rem;
@@ -168,12 +173,7 @@
   color: #ddd;
   font-weight: 600;
 }
-.heading-tertiary {
-  margin-bottom: 3rem;
-  font-size: 3rem;
-  line-height: 1.2;
-  color: #333git push;
-}
+
 .step-description {
   font-size: 1.8rem;
   line-height: 1.6;
@@ -474,6 +474,7 @@
   grid-template-columns: 2fr 1fr;
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
   border-radius: 11px;
+  box-shadow: 9px 11px 43px #999;
 
   overflow: hidden;
 }
@@ -538,4 +539,36 @@
 .cta *:focus {
   outline: none;
   box-shadow: 0 0 0 0.2rem #f1d4bc;
+}
+/******************************/
+/* FOOTER */
+/******************************/
+.footer {
+  padding: 9.6rem 0;
+}
+.omni-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.omni-info-box {
+  gap: 5rem;
+}
+.omni-box p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+.omni-box img:first-child {
+  height: 2.2rem;
+}
+.footer-headings {
+  font-size: 2rem;
+  color: #333;
+}
+.social-logos {
+  font-size: 2rem;
+  gap: 2rem;
+}
+#copyright {
+  font-size: 1.2rem;
 }
