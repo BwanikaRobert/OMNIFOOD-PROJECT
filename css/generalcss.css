@@ -135,7 +135,7 @@ body {
 }
 .grid--5-cols {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1.5fr 1.5fr repeat(3, 1fr);
 }
 /******************************/
 /* HELPER CLASSES */
