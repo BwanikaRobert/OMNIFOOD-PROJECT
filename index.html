@@ -11,29 +11,31 @@
       rel="stylesheet"
     />
     <link href="css/generalcss.css" rel="stylesheet" />
-
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/queries.css" rel="stylesheet" />
   </head>
   <body>
-    <main>
-      <header class="header">
+    <header class="header">
+      <a href="#">
         <img alt="Omnifood logo" class="logo" src="img/omnifood-logo.png" />
-        <nav class="main-nav">
-          <ul class="main-nav-list">
-            <li><a class="main-nav-link" href="#">Section-1</a></li>
-            <li><a class="main-nav-link" href="#">Section-2</a></li>
-            <li><a class="main-nav-link" href="#">Section-3</a></li>
-            <li><a class="main-nav-link" href="#">Section-4</a></li>
-            <li><a class="main-nav-link nav-cta" href="#">Section-5</a></li>
-          </ul>
-        </nav>
-      </header>
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">How it works</a></li>
+          <li><a class="main-nav-link" href="#">Meals</a></li>
+          <li><a class="main-nav-link" href="#">Testimonials</a></li>
+          <li><a class="main-nav-link" href="#">Pricing</a></li>
+          <li><a class="main-nav-link nav-cta" href="#">Try it for free</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
       <section class="section-hero">
         <div class="hero">
           <div class="hero-text-box">
-            <h2 class="heading-primary">
+            <h1 class="heading-primary">
               A healthy meal delivered to your door, every single day
-            </h2>
+            </h1>
             <p class="hero-description">
               The smart 365-days-per-year food subscription that will make you
               eat healthy again. Tailored to your personal tastes and
@@ -261,7 +263,6 @@
           <a href="#" class="link">See all recipes</a>
         </div>
       </section>
-
       <section class="section-testimonials">
         <div class="testimonial-container">
           <span class="subheading">Testimonials</span>
@@ -529,41 +530,92 @@
       <div class="container">
         <div class="omni-info-box grid--5-cols">
           <div class="omni-box">
-            <img src="img/omnifood-logo.png" alt="Omnifood Logo" />
+            <a href="#">
+              <img
+                alt="Omnifood logo"
+                class="logo footer-logo"
+                src="img/omnifood-logo.png"
+              />
+            </a>
             <div class="social-logos flex">
-              <ion-icon name="logo-instagram"></ion-icon>
-              <ion-icon name="logo-facebook"></ion-icon>
-              <ion-icon name="logo-twitter"></ion-icon>
+              <a class="footer-link" href="#">
+                <ion-icon class="footer-icon" name="logo-instagram"></ion-icon>
+              </a>
+              <a class="footer-link" href="#">
+                <ion-icon class="footer-icon" name="logo-facebook"></ion-icon>
+              </a>
+              <a class="footer-link" href="#">
+                <ion-icon class="footer-icon" name="logo-twitter"></ion-icon>
+              </a>
             </div>
             <p id="copyright">
               Copyright &copy; 2024 by Omnifood, Inc. All rights reserved.
             </p>
           </div>
-          <div class="omni-box">
+          <div class="nav-link flex">
             <h4 class="footer-headings">Contact us</h4>
-            <p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
-            <p>415-201-6370 hello@omnifood.com</p>
+            <address class="contact">
+              <p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+              <p>
+                <a class="footer-link" href="tel:415-201-6370">415-201-6370</a>
+                <br /><br />
+                <a class="footer-link" href="mailto:hello@omnifood.com"
+                  >hello@omnifood.com</a
+                >
+              </p>
+            </address>
           </div>
-          <div class="omni-box">
+          <nav>
             <h4 class="footer-headings">Account</h4>
-            <p>Create account</p>
-            <p>Sign in</p>
-            <p>iOS app</p>
-            <p>Android app</p>
-          </div>
-          <div class="omni-box">
+            <ul class="nav-link">
+              <li>
+                <a class="footer-link" href="#">Create account</a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">Sign in</a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">iOS app</a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">Android app</a>
+              </li>
+            </ul>
+          </nav>
+          <nav>
             <h4 class="footer-headings">Company</h4>
-            <p>About Omnifood</p>
-            <p>For Business</p>
-            <p>Cooking partners</p>
-            <p>Careers</p>
-          </div>
-          <div class="omni-box">
+            <ul class="nav-link">
+              <li>
+                <a class="footer-link" href="#">About Omnifood</a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">For business</a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">Cooiing partners</a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">Careers</a>
+              </li>
+            </ul>
+          </nav>
+          <nav>
             <h4 class="footer-headings">Resources</h4>
-            <p>Recipe directory</p>
-            <p>Help center</p>
-            <p>Privacy & terms</p>
-          </div>
+            <ul class="nav-link">
+              <li>
+                <a class="footer-link" href="#">Recipe directory</a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">Help center</a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">Privacy & terms</a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">Android app</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </footer>
