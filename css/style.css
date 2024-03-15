@@ -13,18 +13,19 @@
   /* a sticky header */
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 .main-nav-list {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 .main-nav-link:link,
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   color: #333;
   font-size: 1.8rem;
   transition: all 300ms;
@@ -48,6 +49,37 @@
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
 }
+.mobile-menu {
+  background: none;
+  border: none;
+  display: none;
+}
+.mobile-close-icon {
+  display: none;
+}
+.mobile-menu-icon,
+.mobile-close-icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+/* STICKY HEADER */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 100;
+  box-shadow: 0 1.2rem 3.2rem rgba(133, 133, 133, 0.3);
+  background-color: rgba(253, 242, 233, 0.986);
+}
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
+
 /******************************/
 /* HERO SECTION */
 /******************************/
@@ -61,7 +93,7 @@
   max-width: 130rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 9.8rem;
   align-items: center;
 }
@@ -287,6 +319,7 @@
   flex-direction: column;
   gap: 2.4rem;
   list-style: none;
+  line-height: 1.2;
 }
 .diet-attribute {
   display: flex;
@@ -357,6 +390,8 @@
   overflow: hidden;
 }
 .gallery-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
   padding: 1.6rem;
 }
@@ -387,12 +422,14 @@
   padding: 4rem 6.2rem;
   border-radius: 10px;
   width: 75%;
+  justify-self: end;
 }
 .price-tab--2 {
   background-color: #f1d4bc;
   border: none;
   position: relative;
   overflow: hidden;
+  justify-self: end;
 }
 .price-tab--2::after {
   content: "BEST VALUE";
@@ -473,7 +510,7 @@
   grid-template-columns: 2fr 1fr;
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
   border-radius: 11px;
-  box-shadow: 9px 11px 43px #999;
+  box-shadow: 9px 11px 43px #e2e2e2;
 
   overflow: hidden;
 }
